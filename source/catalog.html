@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Mishka</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="site-list main-nav__list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item search">
+            <form class="searching" action="https://echo.htmlacademy.ru" method="get">
+              <label class="searching__search-icon" for="search-field">Поиск</label>
+              <input type="searching__search-field" class="search-field" id="search-field" placeholder="Поиск по сайту">
+            </form>
+          </li>
+          <li class="site-list__item cart">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main inner-page">
+    <h1 class="page-title">Каталог товаров</h1>
+    <section class="catalog">
+      <section class="catalog__item">
+        <a href="item.html">
+          <img class="catalog__img" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+          <h2 class="catalog__title">Зайчик-попрыгайчик</h2>
+        </a>
+        <span class="catalog__description">Рост 30 см, вес 200 г</span>
+        <span class="catalog__price">1200 руб.</span>
+        <a class="button catalog__order-btn" href="#">
+          <span class="visually-hidden">Купить</span>
+        </a>
+      </section>
+      <section class="catalog__item">
+        <a href="item.html">
+          <img class="catalog__img" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Корзинка для белья">
+          <h2 class="catalog__title">Корзинка для белья</h2>
+        </a>
+        <span class="catalog__description">Диаметр 15 см, высота 10 см</span>
+        <span class="catalog__price">690 руб.</span>
+        <a class="button catalog__order-btn" href="#">
+          <span class="visually-hidden">Купить</span>
+        </a>
+      </section>
+      <section class="catalog__item">
+        <a href="item.html">
+          <img class="catalog__img" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+          <h2 class="catalog__title">Большая корзинка для игрушек</h2>
+        </a>
+        <span class="catalog__description">Диаметр 30 см, высота 30 см</span>
+        <span class="catalog__price">1500 руб.</span>
+        <a class="button catalog__order-btn" href="#">
+          <span class="visually-hidden">Купить</span>
+        </a>
+      </section>
+    </section>
+    <section class="production">
+      <h2 class="production__header">Процесс производства</h2>
+      <img class="production__video" src="https://via.placeholder.com/260x150" width="260" height="150" alt="Видеоролик с процессом производства">
+      <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="button production__btn" href="form.html">Сделать заказ</a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <section class="social">
+      <h2 class="visually-hidden">Mishka в социальных сетях</h2>
+      <ul>
+        <li>
+          <a class="social__btn social__btn--inst" href="#">
+            <img src="https://via.placeholder.com/23x28" alt="Mishka в Инстаграм" width="23" height="28">
+          </a>
+        </li>
+        <li>
+          <a class="social__btn social__btn--fb" href="#">
+            <img src="https://via.placeholder.com/23x28" alt="Mishka на Фейсбуке" width="23" height="28">
+          </a>
+        </li>
+        <li>
+          <a class="social__btn social__btn--tw" href="#">
+            <img src="https://via.placeholder.com/23x28" alt="Mishka в Твиттере" width="23" height="28">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="copyright">
+      <a class="btn" href="https://htmlacademy.ru/intensive/adaptive">
+        <h2 class="copyright__title">Разработано</h2>
+        <img src="https://via.placeholder.com/27x34" alt="HTML Academy" width="27" height="34">
+      </a>
+    </section>
+  </footer>
+
+  <section class="modal modal-buy">
+    <h2 class="modal-buy__header">Добавить в корзину</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="size">
+        <legend>Выберите размер:</legend>
+        <ul class="size__list">
+          <li>
+            <input class="visually-hidden" type="radio" name="size-radio" id="size-s" value="size-s" checked>
+            <label for="size-s">S</label>
+          </li>
+          <li>
+            <input class="visually-hidden" type="radio" name="size-radio" id="size-m" value="size-m">
+            <label for="size-m">M</label>
+          </li>
+          <li>
+            <input class="visually-hidden" type="radio" name="size-radio" id="size-l" value="size-l">
+            <label for="size-l">L</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="button modal-buy__btn" type="submit">Добавить</button>
+    </form>
+  </section>
+</body>
+</html>
