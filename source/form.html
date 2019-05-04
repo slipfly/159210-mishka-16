@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Mishka</title>
+  <meta charset="UTF-8">
+  <title>Mishka</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <nav class="main-nav main-nav--opened">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="site-list main-nav__list">
           <li class="site-list__item">
@@ -34,8 +35,8 @@
   </header>
 
   <main class="form-main">
-    <h1 class="page-title">Вязание на заказ</h1>
-    <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+    <h1 class="page-title page-title--inner">Вязание на заказ</h1>
+    <p class="form-main__introduction">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <section class="order">
       <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
@@ -60,7 +61,7 @@
             </li>
             <li>
               <input class="visually-hidden" type="checkbox" name="grey" id="grey" checked>
-              <label class="order-form__var" for="white">grey</label>
+              <label class="order-form__var" for="white">Серый</label>
             </li>
             <li>
               <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany">
@@ -82,21 +83,23 @@
         </fieldset>
         <fieldset>
           <legend class="order-form__fieldset-legend">ФИО</legend>
-          <label for="first-name">Имя:</label>
-          <input class="order-form__input" id="first-name" type="text" name="first-name" value="" placeholder="Введите ваше имя*">
-          <label for="last-name">Фамилия:</label>
-          <input class="order-form__input" id="last-name" type="text" name="last-name" value="" placeholder="Укажите фамилию*">
-          <label for="fathers-name">Отчество:</label>
-          <input class="order-form__input" id="fathers-name" type="text" name="fathers-name" value="" placeholder="Отчество, если желаете">
+          <div class="order-form__personal">
+            <label for="first-name">Имя:</label>
+            <input class="order-form__input" id="first-name" type="text" name="first-name" value="" placeholder="Введите ваше имя*">
+            <label for="last-name">Фамилия:</label>
+            <input class="order-form__input" id="last-name" type="text" name="last-name" value="" placeholder="Укажите фамилию*">
+            <label for="fathers-name">Отчество:</label>
+            <input class="order-form__input" id="fathers-name" type="text" name="fathers-name" value="" placeholder="Отчество, если желаете">
+          </div>
         </fieldset>
         <fieldset>
           <legend class="order-form__fieldset-legend">Тел</legend>
-          <label for="phone">Имя:</label>
+          <label class="visually-hidden" for="phone">Телефон:</label>
           <input class="order-form__input order-form__input--phone" id="phone" type="tel" name="phone" value="" placeholder="+7 XXX XXX XX XX*">
         </fieldset>
         <fieldset>
           <legend class="order-form__fieldset-legend">E-mail</legend>
-          <label for="email">Имя:</label>
+          <label class="visually-hidden" for="email">E-mail:</label>
           <input class="order-form__input order-form__input--email" id="email" type="email" name="email" value="" placeholder="Ваш Email*">
         </fieldset>
         <fieldset>
@@ -109,7 +112,7 @@
     </section>
   </main>
 
-  <footer class="page-main form-page">
+  <footer class="page-footer">
     <section class="social">
       <h2 class="visually-hidden">Mishka в социальных сетях</h2>
       <ul>
@@ -131,8 +134,8 @@
       </ul>
     </section>
     <section class="copyright">
-      <a class="btn" href="https://htmlacademy.ru/intensive/adaptive">
-        <h2 class="copyright__title">Разработано</h2>
+      <a class="copyright__btn" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="copyright__title">Разработано</p>
         <img src="https://via.placeholder.com/27x34" alt="HTML Academy" width="27" height="34">
       </a>
     </section>
