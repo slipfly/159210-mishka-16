@@ -1,6 +1,6 @@
 .itemcard a {
   text-decoration: none;
-  color: hsl(0, 0%, 0%);
+  color: #000000;
 }
 
 .itemcard__img {
@@ -10,9 +10,8 @@
 }
 
 .itemcard__container {
-  position: relative;
   padding: 27px;
-  border: 1px solid @lightgray;
+  border: 1px solid #ededed;
 }
 
 .itemcard__title {
@@ -29,7 +28,12 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
-  border-bottom: 1px solid @lightgray;
+  border-bottom: 1px solid #ededed;
+}
+
+.itemcard__price-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .itemcard__price {
@@ -39,12 +43,10 @@
 }
 
 .itemcard__order-btn {
-  position: absolute;
   padding: 0;
   width: 20px;
   height: 19px;
-  right: 27px;
-  bottom: 30px;
+  align-self: flex-end;
   border: none;
   outline: 1px solid red;
 }

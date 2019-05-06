@@ -1,5 +1,5 @@
 .searching {
-  border-bottom: 1px solid @lightgray;
+  border-bottom: 1px solid #ececec;
 }
 
 .searching__search-field {
@@ -12,10 +12,22 @@
   border: none;
 }
 
-.searching__search-field::placeholder {
+.searching__search-field::placeholder,
+.searching__search-field::-webkit-input-placeholder,
+.searching__search-field:-moz-placeholder,
+.searching__search-field::-moz-placeholder,
+.searching__search-field:-ms-input-placeholder,
+.searching__search-field:hover::-webkit-input-placeholder,
+.searching__search-field:hover:-moz-placeholder,
+.searching__search-field:hover::-moz-placeholder,
+.searching__search-field:hover:-ms-input-placeholder,
+.searching__search-field:focus::-webkit-input-placeholder,
+.searching__search-field:focus:-moz-placeholder,
+.searching__search-field:focus::-moz-placeholder,
+.searching__search-field:focus:-ms-input-placeholder {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  color: hsl(0, 0%, 0%);
+  color: #000000;
 }

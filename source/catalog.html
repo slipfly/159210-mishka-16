@@ -6,12 +6,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka">
-    </a>
-    <nav class="main-nav main-nav--opened">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  <header class="page-header page-header--nav-opened">
+    <div class="page-header__container">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka">
+      </a>
+      <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
+    <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="site-list main-nav__list">
           <li class="site-list__item">
@@ -22,7 +24,7 @@
           </li>
           <li class="site-list__item search">
             <form class="searching" action="https://echo.htmlacademy.ru" method="get">
-              <label class="searching__search-icon" for="search-field">Поиск</label>
+              <label class="visually-hidden" for="search-field">Поиск</label>
               <input class="searching__search-field" type="search" id="search-field" placeholder="Поиск по сайту">
             </form>
           </li>
@@ -46,10 +48,12 @@
             <h2 class="itemcard__title">Зайчик-попрыгайчик</h2>
           </a>
           <span class="itemcard__description">Рост 30 см, вес 200 г</span>
-          <span class="itemcard__price">1200 руб.</span>
-          <a class="button itemcard__order-btn" href="#">
-            <span class="visually-hidden">Купить</span>
-          </a>
+          <div class="itemcard__price-container">
+            <span class="itemcard__price">1200 руб.</span>
+            <a class="button itemcard__order-btn" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </div>
         </div>
       </section>
       <section class="catalog__item itemcard">
@@ -61,10 +65,12 @@
             <h2 class="itemcard__title">Корзинка для белья</h2>
           </a>
           <span class="itemcard__description">Диаметр 15 см, высота 10 см</span>
-          <span class="itemcard__price">690 руб.</span>
-          <a class="button itemcard__order-btn" href="#">
-            <span class="visually-hidden">Купить</span>
-          </a>
+          <div class="itemcard__price-container">
+            <span class="itemcard__price">690 руб.</span>
+            <a class="button itemcard__order-btn" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </div>
         </div>
       </section>
       <section class="catalog__item itemcard">
@@ -76,10 +82,12 @@
             <h2 class="itemcard__title">Большая корзинка для игрушек</h2>
           </a>
           <span class="itemcard__description">Диаметр 30 см, высота 30 см</span>
-          <span class="itemcard__price">1500 руб.</span>
-          <a class="button itemcard__order-btn" href="#">
-            <span class="visually-hidden">Купить</span>
-          </a>
+          <div class="itemcard__price-container">
+            <span class="itemcard__price">1500 руб.</span>
+            <a class="button itemcard__order-btn" href="#">
+              <span class="visually-hidden">Купить</span>
+            </a>
+          </div>
         </div>
       </section>
     </section>
