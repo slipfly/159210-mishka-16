@@ -1,12 +1,15 @@
 .itemcard a {
+  display: block;
+  width: 260px;
+  height: 195px;
+  overflow: hidden;
   text-decoration: none;
   color: #000000;
 }
 
 .itemcard__img {
-  display: block;
-  width: 260px;
-  height: 195px;
+  width: 100%;
+  height: auto;
 }
 
 .itemcard__container {
@@ -52,7 +55,7 @@
 }
 
 @media (min-width: 768px) {
-  .itemcard__img {
+  .itemcard a {
     width: 334px;
     height: 334px;
   }
@@ -79,7 +82,7 @@
 }
 
 @media (min-width: 1150px) {
-  .itemcard__img {
+  .itemcard a {
     width: 316px;
     height: 462px;
   }

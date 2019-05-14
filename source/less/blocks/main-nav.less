@@ -28,16 +28,18 @@
 
 @media (min-width: 768px) {
   .main-nav {
-    order: 2;
-    font-size: 15px;
+    max-height: 0;
     margin: 0 50px;
     margin-left: 0;
-    margin-bottom: -64px;
+    order: 2;
+    font-size: 15px;
     z-index: 1;
   }
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 440px;
   }
 
   .main-nav a {
@@ -51,9 +53,23 @@
 
 @media (min-width: 1150px) {
   .main-nav {
+    max-height: inherit;
     margin: 0;
     order: -1;
     font-size: 17px;
+  }
+
+  .main-nav__list {
+    max-height: inherit;
+  }
+
+  .main-nav__list li:nth-child(2n-1) > a {
+    padding-left: 0;
+    border-right: 1px solid #ececec;
+  }
+
+  .main-nav__list li:nth-child(2n) > a {
+    padding-left: 35px;
   }
 
   .main-nav a {

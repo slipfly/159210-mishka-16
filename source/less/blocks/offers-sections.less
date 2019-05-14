@@ -1,13 +1,14 @@
-.other-sections {
+.offers-sections {
   display: none;
 }
 
 @media (min-width: 1150px) {
-  .other-sections {
+  .offers-sections {
     display: flex;
     position: relative;
+    max-width: 600px;
+    max-height: 0;
     margin: 0;
-    margin-bottom: -64px;
     font-weight: 700;
     line-height: 24px;
     text-align: center;
@@ -16,14 +17,14 @@
     z-index: 1;
   }
 
-  .other-sections__list {
+  .offers-sections__list {
     display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
   }
 
-  .other-sections a {
+  .offers-sections a {
     display: block;
     margin: 0 auto;
     text-align: left;
