@@ -9,3 +9,29 @@
 .catalog__item {
   margin-bottom: 30px;
 }
+
+@media (min-width: 768px) {
+  .catalog {
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  .catalog__item {
+    display: flex;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog {
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+    width: 316px;
+  }
+}

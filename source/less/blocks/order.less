@@ -1,6 +1,30 @@
-.order {
+.order__container {
   padding: 25px 30px;
   width: 260px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .order {
+    background-image: linear-gradient(to bottom, #ffffff 14%, #f1f1f1 14%, #f1f1f1 31%, #ffffff 31%, #ffffff 54%, #f1f1f1 54%, #f1f1f1 72%, #ffffff 72%);
+  }
+
+  .order__container {
+    width: 668px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .order {
+    background-image: linear-gradient(to bottom, #ffffff 14%, #f1f1f1 14%, #f1f1f1 33%, #ffffff 33%, #ffffff 55%, #f1f1f1 55%, #f1f1f1 74%, #ffffff 74%);
+  }
+
+  .order__container {
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
 }
