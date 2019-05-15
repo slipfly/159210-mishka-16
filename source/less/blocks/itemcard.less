@@ -1,10 +1,13 @@
 .itemcard a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.itemcard__img-container {
   display: block;
   width: 260px;
   height: 195px;
   overflow: hidden;
-  text-decoration: none;
-  color: #000000;
 }
 
 .itemcard__img {
@@ -55,7 +58,7 @@
 }
 
 @media (min-width: 768px) {
-  .itemcard a {
+  .itemcard__img-container {
     width: 334px;
     height: 334px;
   }
@@ -82,7 +85,7 @@
 }
 
 @media (min-width: 1150px) {
-  .itemcard a {
+  .itemcard__img-container {
     width: 316px;
     height: 462px;
   }
