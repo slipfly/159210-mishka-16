@@ -1,4 +1,4 @@
-.order-form fieldset {
+.order-form__fieldset {
   position: relative;
   width: 260px;
   padding: 0 30px;
@@ -7,7 +7,6 @@
 }
 
 .order-form__fieldset-legend {
-  display: flex;
   align-items: center;
   margin: 0 0 40px;
   width: 100%;
@@ -59,11 +58,11 @@
   flex-direction: column;
 }
 
-.order-form__padding-container .order-form__personal-container:last-child > .order-form__input {
+.order-form__personal-container:last-child > .order-form__input {
   margin-bottom: 0;
 }
 
-.order-form__padding-container .order-form__input--email {
+.order-form__input--email {
   margin-bottom: 0;
 }
 
@@ -224,24 +223,22 @@
 }
 
 @media (min-width: 768px) {
-  .order-form fieldset {
+  .order-form__fieldset {
+    display: flex;
     width: 668px;
     padding: 0 50px;
   }
 
   .order-form__fieldset-legend {
-    position: absolute;
-    width: auto;
-    top: 4px;
-    left: auto;
+    width: 167px;
   }
 
   .order-form__fieldset-legend::after {
     background-color: transparent;
   }
 
-  .order-form__padding-container {
-    padding-left: 170px;
+  .order-form__growing-container {
+    flex-grow: 1;
   }
 
   .order-form__color-container {
@@ -250,9 +247,11 @@
 
   .order-form__type {
     margin-bottom: 0;
+    flex-grow: 1;
   }
 
   .order-form__color {
+    flex-grow: 1;
     column-width: 240px;
     column-gap: 15px;
     column-count: 2;
@@ -305,7 +304,7 @@
 }
 
 @media (min-width: 1150px) {
-  .order-form fieldset {
+  .order-form__fieldset {
     width: 1050px;
   }
 
