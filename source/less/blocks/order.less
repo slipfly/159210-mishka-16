@@ -1,6 +1,15 @@
-.order {
-  padding: 25px 30px;
-  width: 260px;
-  margin-left: auto;
-  margin-right: auto;
+.order__container {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .order__container {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .order__container:nth-of-type(2n) {
+    background-color: #f1f1f1;
+  }
 }

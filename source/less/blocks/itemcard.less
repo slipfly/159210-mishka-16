@@ -3,10 +3,16 @@
   color: #000000;
 }
 
-.itemcard__img {
+.itemcard__img-container {
   display: block;
   width: 260px;
   height: 195px;
+  overflow: hidden;
+}
+
+.itemcard__img {
+  width: 100%;
+  height: auto;
 }
 
 .itemcard__container {
@@ -24,16 +30,16 @@
 .itemcard__description {
   display: block;
   padding-bottom: 20px;
-  margin-bottom: 28px;
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
-  border-bottom: 1px solid #ededed;
 }
 
 .itemcard__price-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
+  border-top: 1px solid #ededed;
 }
 
 .itemcard__price {
@@ -49,4 +55,43 @@
   align-self: flex-end;
   border: none;
   outline: 1px solid red;
+}
+
+@media (min-width: 768px) {
+  .itemcard__img-container {
+    width: 334px;
+    height: 334px;
+  }
+
+  .itemcard__title {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .itemcard__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 334px;
+  }
+
+  .itemcard__description {
+    font-size: 15px;
+  }
+
+  .itemcard__price {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .itemcard__img-container {
+    width: 316px;
+    height: 462px;
+  }
+
+  .itemcard__container {
+    width: 260px;
+    min-height: 195px;
+  }
 }
