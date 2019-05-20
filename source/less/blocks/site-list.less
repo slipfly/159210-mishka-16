@@ -1,9 +1,49 @@
 .site-list__item {
+  position: relative;
   border-bottom: 1px solid #ececec;
+}
+
+.site-list__item a,
+.site-list__item input {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-list__cart-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 19px;
+  padding: 30px 15px 30px 32px;
+  opacity: 0.2;
+  z-index: 2;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover path,
+  &:active path {
+    fill: #63d1bb;
+  }
 }
 
 @media (min-width: 768px) {
   .site-list__item {
     border: none;
+  }
+
+  .site-list__cart-icon {
+    top: 5px;
   }
 }

@@ -10,7 +10,7 @@
     <div class="page-header__wrapper">
       <div class="page-header__container">
         <a class="page-header__logo" href="#">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип Mishka">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип Mishka">
         </a>
         <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -28,11 +28,19 @@
         <ul class="site-list user-nav__list">
           <li class="site-list__item search">
             <form class="searching" action="https://echo.htmlacademy.ru" method="get">
-              <label class="searching__label" for="search-field">Поиск</label>
+              <label class="searching__label" for="search-field">
+                Поиск
+                <svg class="searching__search-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="32px" y="30px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                  <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"></path>
+                </svg>
+              </label>
               <input class="searching__search-field" type="search" id="search-field" placeholder="Поиск по сайту">
             </form>
           </li>
           <li class="site-list__item cart">
+            <svg class="site-list__cart-icon" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849">
+              <path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"></path>
+            </svg>
             <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
@@ -53,16 +61,26 @@
   <main class="page-content">
     <div class="page-title-block page-title-block--index">
       <div class="page-title-block__wrapper-index">
-        <p class="page-note">Бесплатная доставка по всей России</p>
-        <h1 class="page-title">Милые штуки ручной работы для дома</h1>
+        <p class="page-note">Бесплатная доставка по России</p>
+        <h1 class="page-title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
       </div>
       <div class="main-menu">
         <ul class="main-menu__container">
           <li class="main-menu__item">
-            <a class="main-menu__link" href="interior.html">Предметы интерьера</a>
+            <a class="main-menu__link" href="interior.html">
+              Предметы интерьера
+              <svg class="main-menu__interior-icon" xmlns="http://www.w3.org/2000/svg" width="40.219" height="62.411" viewBox="-259.404 -19.675 40.219 62.411">
+                <path fill="#149080" d="M-244.227 18.283c-.286.966-.245 2.191.027 3.639.494 2.635 1.687 6.041 2.358 9.67h5.062c.696-3.641 1.949-7.05 2.471-9.683.287-1.445.33-2.66.041-3.617-.275-.899-.89-1.618-2.021-2.303h-5.997c-1.075.679-1.674 1.391-1.941 2.294zM-232.395 38.278h-13.799c-1.293 0-2.299.976-2.299 2.229v2.229h18.397v-2.229c0-1.253-1.006-2.229-2.299-2.229zM-225.262-17.446h-11.732c0-1.244-1.015-2.229-2.3-2.229-1.283 0-2.3.985-2.3 2.229h-11.737l-6.073 25.517c.794-.461 1.589-.992 2.632-.992 1.359 0 2.243.818 2.924 1.375.682.557 1.162.849 1.447.849.292.001.769-.287 1.451-.836.681-.548 1.564-1.358 2.915-1.358 1.349 0 2.237.806 2.919 1.354.684.549 1.161.84 1.451.84.146 0 .338-.073.58-.214.242-.141.53-.353.872-.626.512-.411 1.139-.967 1.99-1.218.284-.085.593-.136.93-.136 1.347 0 2.238.805 2.92 1.354.683.548 1.159.84 1.451.84.287-.002.766-.296 1.445-.85.684-.554 1.571-1.367 2.925-1.367 1.356 0 2.239.817 2.919 1.371.342.276.631.489.872.631.24.143.431.214.575.214.288 0 .762-.293 1.442-.854.68-.559 1.567-1.384 2.929-1.384 1.044 0 1.839.533 2.632.997l-6.079-25.507zM-235.881 33.82h-6.864c-.657 0-1.15.479-1.15 1.115 0 .635.493 1.113 1.15 1.113h6.9c.655 0 1.15-.479 1.15-1.113 0-.636-.495-1.115-1.15-1.115h-.036zM-239.295 9.336c-.146 0-.338.074-.58.213-.157.094-.37.261-.57.41v3.731h2.299V9.959c-.505-.378-.908-.623-1.149-.623z"></path>
+              </svg>
+            </a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="toys.html">Детские игрушки</a>
+            <a class="main-menu__link" href="toys.html">
+              Детские игрушки
+              <svg class="main-menu__toy-icon" xmlns="http://www.w3.org/2000/svg" width="60" height="59.62" viewBox="226.001 226.19 60 59.62">
+                <path fill="#149080" d="M226.001 269.871l27.438 15.934v-23.346l-27.438-15.94v23.352zm51.346-31.244v2.453c0 1.817-3.458 3.29-7.73 3.29-4.266 0-7.727-1.473-7.727-3.29v-4.059h.024c.26 1.714 3.604 3.073 7.702 3.073 4.272 0 7.729-1.474 7.729-3.285 0-1.819-3.457-3.289-7.729-3.289-.339 0-.675.01-1.002.03l-4.975-2.888v3.086c0 1.817-3.454 3.29-7.723 3.29-2.683 0-5.045-.583-6.433-1.467a3.928 3.928 0 0 0-.732-.586c-.363-.381-.565-.797-.565-1.236v-2.986l-4.807 2.792a21.384 21.384 0 0 0-1.054-.033c-4.267 0-7.727 1.469-7.727 3.289 0 1.811 3.46 3.285 7.727 3.285 4.099 0 7.446-1.358 7.705-3.073h.022v4.059c0 1.817-3.455 3.29-7.727 3.29-4.267 0-7.727-1.473-7.727-3.29v-2.42l-5.952 3.452 27.531 15.986 27.351-15.882-6.181-3.591zm-13.644 10.166c0 1.817-3.46 3.287-7.727 3.287-4.269 0-7.729-1.47-7.729-3.287v-4.059h.024c.26 1.715 3.603 3.076 7.705 3.076 4.101 0 7.443-1.361 7.705-3.076h.021v4.059h.001zm-5.145 13.873v23.144L286 269.871v-23.144l-27.442 15.939zm-2.641-29.904c4.269 0 7.723-1.47 7.723-3.286 0-1.814-3.454-3.287-7.723-3.287-4.27 0-7.729 1.472-7.729 3.287-.001 1.816 3.459 3.286 7.729 3.286"></path>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -89,7 +107,7 @@
           </tr>
         </table>
         <div class="popular__image">
-          <img src="https://via.placeholder.com/260x315" width="260" height="315" alt="Вязаные корзинки">
+          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
         </div>
         <span class="popular__price">Цена: 990 руб.</span>
         <a class="button popular__order-btn" href="#">Заказать</a>
@@ -99,7 +117,7 @@
       <h2 class="advantages__title">Коротко о нас:</h2>
       <div class="advantages__container">
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--materials">Экологически чистые материалы</li>
+          <li class="advantages__item advantages__item--materials">Экологически чистые&nbsp;материалы</li>
           <li class="advantages__item advantages__item--price">Скандинавский стиль по&nbsp;российской цене</li>
           <li class="advantages__item advantages__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
           <li class="advantages__item advantages__item--with-love">Связано вручную с любовью&nbsp;и умилением</li>
@@ -137,7 +155,7 @@
           </div>
           <div class="contacts__item">
             <span class="contacts__label">Адрес:</span>
-            <address class="contacts__text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис 101</address>
+            <address class="contacts__text">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис 101</address>
           </div>
         </div>
         <div class="contacts__map">
@@ -207,5 +225,23 @@
       <button class="button modal-buy__btn" type="submit">Добавить</button>
     </form>
   </section>
+
+  <script>
+    var pageHeader = document.querySelector('.page-header');
+    var navToggle = document.querySelector('.page-header__nav-toggle');
+
+    pageHeader.classList.remove('page-header--nav-opened');
+    pageHeader.classList.add('page-header--nav-closed');
+
+    navToggle.addEventListener('click', function() {
+      if (pageHeader.classList.contains('page-header--nav-closed')) {
+        pageHeader.classList.remove('page-header--nav-closed');
+        pageHeader.classList.add('page-header--nav-opened');
+      } else {
+        pageHeader.classList.add('page-header--nav-closed');
+        pageHeader.classList.remove('page-header--nav-opened');
+      }
+    });
+  </script>
 </body>
 </html>

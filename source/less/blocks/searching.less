@@ -24,15 +24,26 @@
   font-size: 0;
 }
 
-.searching__label::before {
-  content: "";
+.searching__search-icon {
   position: absolute;
   top: 30px;
   left: 32px;
   width: 18px;
   height: 19px;
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover path,
+  &:active path {
+    fill: #63d1bb;
+  }
 }
 
 .replace-ph(@weight: 700; @size: 17px; @line: 24px; @color: black) {
@@ -107,7 +118,7 @@
     width: 82px;
   }
 
-  .searching__label::before {
+  .searching__search-icon {
     top: 36px;
     right: 32px;
   }
