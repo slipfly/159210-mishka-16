@@ -3,8 +3,16 @@
   border-bottom: 1px solid #ececec;
 }
 
-.site-list__item span,
-.site-list__item input {
+.site-list__item > a:hover > span {
+  opacity: 0.6;
+}
+
+.site-list__item > a:focus > span,
+.site-list__item > a:active > span {
+  opacity: 0.3;
+}
+
+.site-list input {
   &:hover {
     opacity: 0.6;
   }
@@ -24,19 +32,19 @@
   padding: 30px 15px 30px 32px;
   opacity: 0.2;
   z-index: 2;
+}
 
-  &:hover {
-    opacity: 1;
-  }
+.site-list__item a:hover > .site-list__cart-icon {
+  opacity: 1;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.site-list__item a:hover > .site-list__cart-icon > path {
+  fill: #63d1bb;
+}
 
-  &:hover path,
-  &:active path {
-    fill: #63d1bb;
-  }
+.site-list__item a:focus > .site-list__cart-icon,
+.site-list__item a:active > .site-list__cart-icon {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {

@@ -39,14 +39,6 @@
   width: 40px;
   height: 62px;
   opacity: 0.5;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 1;
-  }
 }
 
 .main-menu__toy-icon {
@@ -56,14 +48,18 @@
   width: 60px;
   height: 60px;
   opacity: 0.5;
+}
 
-  &:hover {
-    opacity: 0.7;
-  }
+.main-menu__link:hover > .main-menu__toy-icon,
+.main-menu__link:hover > .main-menu__interior-icon {
+  opacity: 0.7;
+}
 
-  &:active {
-    opacity: 1;
-  }
+.main-menu__link:focus > .main-menu__toy-icon,
+.main-menu__link:active > .main-menu__toy-icon,
+.main-menu__link:focus > .main-menu__interior-icon,
+.main-menu__link:active > .main-menu__interior-icon {
+  opacity: 1;
 }
 
 @media (min-width: 768px) {
@@ -109,6 +105,11 @@
   .main-menu__toy-icon {
     top: 30px;
     right: 33px;
+  }
+
+  .main-menu__item:hover {
+    transform: translateY(-5px);
+    margin-bottom: -5px;
   }
 }
 
