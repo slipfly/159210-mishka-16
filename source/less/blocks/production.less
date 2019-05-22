@@ -1,14 +1,14 @@
 .production {
   padding: 30px;
   padding-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   width: 260px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .production__container {
-  padding: 33px;
+  padding: 23px 33px;
   border: 1px solid #ececec;
 }
 
@@ -38,7 +38,7 @@
 
 .production__description {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -46,16 +46,25 @@
 
 .production__btn {
   display: block;
+  letter-spacing: normal;
+  margin-bottom: 8px;
 }
 
 @media (min-width: 768px) {
   .production {
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    padding-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 63px;
+    padding: 0;
     width: 668px;
+
+    &:hover {
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 
   .production__video-container {
@@ -81,10 +90,12 @@
 
   .production__container:first-of-type {
     padding-bottom: 0;
+    padding-top: 35px;
     border-bottom: none;
   }
 
   .production__container:last-of-type {
+    padding-top: 32px;
     border-top: none;
   }
 
@@ -95,12 +106,14 @@
 
   .production__description {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     font-size: 15px;
     line-height: 30px;
   }
 
   .production__btn {
+    margin-bottom: 5px;
+    padding: 16px;
     font-size: 17px;
     line-height: 16px;
   }
@@ -111,7 +124,8 @@
     width: 318px;
     position: relative;
     padding-left: 682px;
-    margin-bottom: 55px;
+    margin-bottom: 110px;
+    padding-right: 51px;
   }
 
   .production__container {
@@ -121,11 +135,21 @@
   }
 
   .production__container:first-of-type {
-    padding-top: 100px;
+    padding-top: 98px;
+    padding-left: 78px;
   }
 
   .production__container:last-of-type {
     padding-bottom: 55px;
+    padding-left: 78px;
+  }
+
+  .production__header {
+    padding-left: 0;
+  }
+
+  .production__description {
+    margin-bottom: 47px;
   }
 
   .production__video-container {
@@ -137,5 +161,9 @@
 
   .production__video {
     width: 682px;
+  }
+
+  .production__btn {
+    margin-bottom: 1px;
   }
 }
