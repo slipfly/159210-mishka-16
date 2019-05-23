@@ -11,7 +11,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__container">
         <a class="page-header__logo" href="#">
-          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип Mishka">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип Mishka">
+          </picture>
         </a>
         <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -114,7 +118,11 @@
           </tr>
         </table>
         <div class="popular__image">
-          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
+          </picture>
         </div>
         <span class="popular__price">Цена: 990 руб.</span>
         <a class="button popular__order-btn" href="#">Заказать</a>
@@ -209,46 +217,64 @@
     </div>
   </footer>
 
-  <section class="modal modal-buy">
-    <h2 class="modal-buy__header">Добавить в&nbsp;корзину</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="size">
-        <legend>Выберите размер:</legend>
-        <ul class="size__list">
-          <li>
-            <input class="visually-hidden" type="radio" name="size-radio" id="size-s" value="size-s" checked>
-            <label for="size-s">S</label>
-          </li>
-          <li>
-            <input class="visually-hidden" type="radio" name="size-radio" id="size-m" value="size-m">
-            <label for="size-m">M</label>
-          </li>
-          <li>
-            <input class="visually-hidden" type="radio" name="size-radio" id="size-l" value="size-l">
-            <label for="size-l">L</label>
-          </li>
-        </ul>
-      </fieldset>
-      <button class="button modal-buy__btn" type="submit">Добавить</button>
-    </form>
+  <section class="modal">
+    <div class="modal__bg"></div>
+    <div class="modal-buy">
+      <h2 class="modal-buy__header">Добавить в&nbsp;корзину</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="size">
+          <legend>Выберите размер:</legend>
+          <ul class="size__list">
+            <li>
+              <input class="visually-hidden" type="radio" name="size-radio" id="size-s" value="size-s" checked>
+              <label for="size-s">S</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="radio" name="size-radio" id="size-m" value="size-m">
+              <label for="size-m">M</label>
+            </li>
+            <li>
+              <input class="visually-hidden" type="radio" name="size-radio" id="size-l" value="size-l">
+              <label for="size-l">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button modal-buy__btn" type="submit">Добавить</button>
+      </form>
+    </div>
   </section>
 
   <script>
-    // var pageHeader = document.querySelector('.page-header');
-    // var navToggle = document.querySelector('.page-header__nav-toggle');
-    //
-    // pageHeader.classList.remove('page-header--nav-opened');
-    // pageHeader.classList.add('page-header--nav-closed');
-    //
-    // navToggle.addEventListener('click', function() {
-    //   if (pageHeader.classList.contains('page-header--nav-closed')) {
-    //     pageHeader.classList.remove('page-header--nav-closed');
-    //     pageHeader.classList.add('page-header--nav-opened');
-    //   } else {
-    //     pageHeader.classList.add('page-header--nav-closed');
-    //     pageHeader.classList.remove('page-header--nav-opened');
-    //   }
-    // });
+    var pageHeader = document.querySelector('.page-header');
+    var navToggle = document.querySelector('.page-header__nav-toggle');
+    var orderBtn = document.querySelector('.popular__order-btn');
+    var modalClose = document.querySelector('.modal__bg');
+    var modalBlock = document.querySelector('.modal')
+
+    pageHeader.classList.remove('page-header--nav-opened');
+    pageHeader.classList.add('page-header--nav-closed');
+
+    navToggle.addEventListener('click', function() {
+      if (pageHeader.classList.contains('page-header--nav-closed')) {
+        pageHeader.classList.remove('page-header--nav-closed');
+        pageHeader.classList.add('page-header--nav-opened');
+      } else {
+        pageHeader.classList.add('page-header--nav-closed');
+        pageHeader.classList.remove('page-header--nav-opened');
+      }
+    });
+
+    orderBtn.addEventListener('click', function () {
+      if (!modalBlock.classList.contains('modal__show')) {
+        modalBlock.classList.add('modal__show');
+      }
+    });
+
+    modalClose.addEventListener('click' , function () {
+      if (modalBlock.classList.contains('modal__show')) {
+        modalBlock.classList.remove('modal__show');
+      }
+    });
   </script>
 </body>
 </html>
