@@ -1,15 +1,30 @@
 .slider__buttons {
   display: flex;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .slider__btn {
   padding: 0;
+  width: 50%;
+  min-height: 50px;
   font: inherit;
   color: inherit;
+  font-size: 0;
   background-color: transparent;
-  width: 50%;
   border: 1px solid #ececec;
+}
+
+.slider__btn-svg {
+  width: 50px;
+  height: 26px;
+}
+
+.slider__btn:hover > .slider__btn-svg {
+  opacity: 0.6;
+}
+
+.slider__btn:active > .slider__btn-svg {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
