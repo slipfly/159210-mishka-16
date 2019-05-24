@@ -20,9 +20,11 @@
 }
 
 .advantages__item {
-  position: relative;
+  //position: relative;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding-top: 70px;
+  padding-top: 15px;
   padding-bottom: 13px;
   font-weight: 700;
   font-size: 17px;
@@ -30,50 +32,66 @@
 }
 
 .advantages__icon {
-  position: absolute;
+  //position: absolute;
   fill: #63d1bb;
 }
 
 .advantages__icon--materials {
-  top: 16px;
-  left: 7px;
+  //top: 16px;
+  //left: 7px;
   width: 32px;
   height: 37px;
+  padding-left: 8px;
+  padding-bottom: 18px;
 }
 
 .advantages__icon--money {
-  top: 17px;
-  left: 0;
+  //top: 17px;
+  //left: 0;
   width: 47px;
   height: 27px;
+  padding-top: 2px;
+  padding-bottom: 27px;
 }
 
 .advantages__icon--likes {
-  top: 21px;
-  left: 7px;
+  //top: 21px;
+  //left: 7px;
   width: 33px;
   height: 28px;
+  padding-top: 5px;
+  padding-bottom: 22px;
+  padding-left: 8px;
 }
 
 .advantages__icon--love {
-  top: 18px;
-  left: 3px;
+  //top: 18px;
+  //left: 3px;
   width: 35px;
   height: 35px;
+  padding-top: 3px;
+  padding-bottom: 17px;
+  padding-left: 4px;
 }
 
 .advantages__icon--factory {
-  top: 20px;
-  left: -5px;
+  //top: 20px;
+  //left: -5px;
   width: 54px;
   height: 23px;
+  padding-top: 3px;
+  padding-bottom: 28px;
+  margin-left: -6px;
 }
 
 .advantages__icon--gift {
-  top: 18px;
-  left: 3px;
+  //top: 18px;
+  //left: 3px;
   width: 33px;
   height: 32px;
+  padding-top: 3px;
+  padding-bottom: 21px;
+  padding-left: 2px;
 }
 
 @media (min-width: 768px) {
@@ -94,55 +112,29 @@
   }
 
   .advantages__container {
-    width: 635px;
+    //width: 635px;
+    //margin: 0 auto;
+    //margin-bottom: 15px;
+    //padding-right: 33px;
+    width: 653px;
     margin: 0 auto;
-    margin-bottom: 15px;
-    padding-right: 33px;
+    margin-bottom: 10px;
+    padding-right: 15px;
   }
 
   .advantages__list {
     padding-top: 10px;
     column-count: 2;
-    column-width: 300px;
-    column-gap: 35px;
   }
 
   .advantages__item {
-    padding-top: 92px;
+    padding-top: 38px;
     padding-bottom: 19px;
     font-size: 20px;
     line-height: 22px;
+    break-inside: avoid;
   }
 
-  .advantages__icon--materials {
-    top: 37px;
-    left: 9px;
-  }
-
-  .advantages__icon--money {
-    top: 40px;
-    left: 2px;
-  }
-
-  .advantages__icon--likes {
-    top: 43px;
-    left: 8px;
-  }
-
-  .advantages__icon--love {
-    top: 40px;
-    left: 2px;
-  }
-
-  .advantages__icon--factory {
-    top: 42px;
-    left: -7px;
-  }
-
-  .advantages__icon--gift {
-    top: 40px;
-    left: 2px;
-  }
 }
 
 @media (min-width: 1150px) {
@@ -160,8 +152,11 @@
   }
 
   .advantages__container {
-    padding-left: 180px;
-    padding-right: 215px;
-    width: 665px;
+    //padding-left: 180px;
+    //padding-right: 215px;
+    //width: 665px;
+    padding-left: 15px;
+    padding-right: 33px;
+    width: 680px;
   }
 }
