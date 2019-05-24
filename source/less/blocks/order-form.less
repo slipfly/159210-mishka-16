@@ -399,8 +399,7 @@
 
   .order-form__type li,
   .order-form__color li {
-    padding: 13px 0 18px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     letter-spacing: 0.07em;
   }
 
@@ -408,9 +407,12 @@
     margin: 0;
   }
 
-  .order-form__type label,
+  .order-form__type label {
+    padding: 13px 0 18px 82px;
+  }
+
   .order-form__color label {
-    padding-left: 82px;
+    padding: 8px 0 22px 82px;
   }
 
   .order-form input[type="radio"] + label::before {
@@ -439,7 +441,8 @@
     height: 30px;
     top: 11px;
     left: 12px;
-    background-size: 33px;
+    background-size: 33px 23px;
+    overflow: hidden;
   }
 
   .order-form__personal-container {
@@ -557,7 +560,6 @@
   .order-form__color li {
     width: 263px;
     margin-bottom: 24px;
-    padding: 11px 0 23px;
   }
 
   .order-form__color li:nth-last-child(1),
