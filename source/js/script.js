@@ -22,22 +22,25 @@ navToggle.addEventListener('click', function(evt) {
   }
 });
 
-orderBtn.addEventListener('click', function (evt) {
-  evt.preventDefault();
-
-  if (!modalBlock.classList.contains('modal__show')) {
-    modalBlock.classList.add('modal__show');
-  }
-});
-
-for (var i = 0; i < orderBtns.length; i++) {
-  orderBtns[i].addEventListener('click', function (evt) {
+if (orderBtn) {
+  orderBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
 
     if (!modalBlock.classList.contains('modal__show')) {
       modalBlock.classList.add('modal__show');
     }
   });
+}
+
+if (orderBtns) {
+  for (var i = 0; i < orderBtns.length; i++) {
+    orderBtns[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      if (!modalBlock.classList.contains('modal__show')) {
+        modalBlock.classList.add('modal__show');
+      }
+    });
+  }
 }
 
 modalClose.addEventListener('click' , function () {
