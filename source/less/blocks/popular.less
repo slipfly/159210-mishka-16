@@ -18,6 +18,7 @@
 .popular__title {
   position: relative;
   padding: 30px;
+  padding-bottom: 0;
   width: 260px;
   margin-left: auto;
   margin-right: auto;
@@ -26,6 +27,7 @@
 .popular__container {
   position: relative;
   padding: 30px;
+  padding-top: 0;
   width: 260px;
   margin-left: auto;
   margin-right: auto;
@@ -191,15 +193,15 @@
 
 @media (min-width: 1150px) {
   .popular {
-    padding-bottom: 85px;
+    padding-bottom: 0;
     padding-top: 50px;
-    padding-right: 45px;
-    padding-left: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1150px;
   }
 
   .popular::after {
-    height: 20px;
-    background-size: auto 20px;
+    display: none;
   }
 
   .popular__title {
@@ -215,16 +217,29 @@
 
   .popular__item-type {
     width: 85px;
-    padding-left: 45px;
     padding-right: 45px;
     padding-top: 5px;
     margin: 0;
+    margin-left: 45px;
     align-self: center;
   }
 
   .popular__container {
-    padding-right: 525px;
-    padding-left: 115px;
+    padding-right: 585px;
+    padding-left: 175px;
+    padding-bottom: 85px;
+  }
+
+  .popular__container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: auto 20px;
+    background-repeat: repeat no-repeat;
   }
 
   .popular__description {
@@ -244,7 +259,7 @@
     width: 525px;
     height: 636px;
     z-index: -1;
-    right: -60px;
+    right: 0;
     top: -160px;
   }
 }

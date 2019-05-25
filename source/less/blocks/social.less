@@ -1,6 +1,6 @@
 .social {
   padding-top: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
 }
@@ -8,10 +8,51 @@
 .social ul {
   padding: 0;
   margin: 0;
+  padding-right: 6px;
   list-style: none;
-  min-width: 150px;
+  min-width: 140px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.social__svg--insta {
+  width: 22px;
+  height: 21px;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__svg--fb {
+  width: 15px;
+  height: 28px;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__svg--twit {
+  width: 23px;
+  height: 20px;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -22,5 +63,11 @@
 
   .social ul {
     align-items: center;
+  }
+}
+
+@media (min-width: 1150px) {
+  .social {
+    padding-top: 25px;
   }
 }

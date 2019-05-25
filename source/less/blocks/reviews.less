@@ -95,21 +95,21 @@
 
 @media (min-width: 1150px) {
   .reviews {
-    padding-top: 0;
-    padding-bottom: 85px;
+    padding: 0;
     background-image: none;
+    margin-right: 50px;
+    margin-left: 50px;
   }
 
   .reviews::after {
-    height: 22px;
-    background-size: auto 21px;
+    display: none;
   }
 
   .reviews__wrapper {
     width: 878px;
     padding-top: 71px;
     padding-left: 172px;
-    padding-bottom: 100px;
+    padding-bottom: 185px;
     background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
@@ -118,6 +118,17 @@
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/review@2x.jpg");
     }
+  }
+
+  .reviews__wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 22px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: auto 22px;
   }
 
   .reviews__header {

@@ -26,6 +26,14 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .itemcard__description {
@@ -56,7 +64,21 @@
   height: 19px;
   align-self: flex-end;
   border: none;
-  outline: 1px solid red;
+}
+
+.itemcard__cart-icon {
+  width: 18px;
+  height: 19px;
+  opacity: 0.2;
+}
+
+.itemcard__order-btn:hover > .itemcard__cart-icon {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.itemcard__order-btn:active > .itemcard__cart-icon {
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {
