@@ -90,7 +90,7 @@
         <div class="order__container">
           <fieldset>
             <div class="order-form__fieldset">
-            <legend class="order-form__fieldset-legend">Тип</legend>
+            <div class="order-form__fieldset-legend">Тип</div>
             <ul class="order-form__type">
               <li>
                 <input class="visually-hidden" type="radio" name="type" id="interior" value="interior" checked="">
@@ -107,7 +107,7 @@
         <div class="order__container">
           <fieldset>
             <div class="order-form__fieldset">
-            <legend class="order-form__fieldset-legend">Цвет</legend>
+            <div class="order-form__fieldset-legend">Цвет</div>
             <div class="order-form__color-container">
               <ul class="order-form__color">
                 <li>
@@ -142,15 +142,15 @@
         <div class="order__container">
           <fieldset>
             <div class="order-form__fieldset">
-            <legend class="order-form__fieldset-legend">ФИО</legend>
+            <div class="order-form__fieldset-legend">ФИО</div>
             <div class="order-form__growing-container">
               <div class="order-form__personal-container">
                 <label for="first-name">Имя:</label>
-                <input class="order-form__input" id="first-name" type="text" name="first-name" value="" placeholder="Введите ваше имя*">
+                <input class="order-form__input" id="first-name" type="text" name="first-name" value="" placeholder="Введите ваше имя*" required>
               </div>
               <div class="order-form__personal-container">
                 <label for="last-name">Фамилия:</label>
-                <input class="order-form__input" id="last-name" type="text" name="last-name" value="" placeholder="Укажите фамилию*">
+                <input class="order-form__input" id="last-name" type="text" name="last-name" value="" placeholder="Укажите фамилию*" required>
               </div>
               <div class="order-form__personal-container">
                 <label for="fathers-name">Отчество:</label>
@@ -163,20 +163,20 @@
         <div class="order__container">
           <fieldset>
             <div class="order-form__fieldset">
-              <legend class="order-form__fieldset-legend order-form__fieldset-legend--nomargin">Тел</legend>
+              <div class="order-form__fieldset-legend order-form__fieldset-legend--nomargin">Тел</div>
               <div class="order-form__growing-container">
                 <label class="visually-hidden" for="phone">Телефон:</label>
-                <input class="order-form__input order-form__input--phone" id="phone" type="tel" name="phone" value="" placeholder="+7 XXX XXX XX XX*">
+                <input class="order-form__input order-form__input--phone" id="phone" type="tel" name="phone" value="" placeholder="+7 XXX XXX XX XX*" required>
                 <svg class="order-form__phone-icon">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
               </div>
             </div>
             <div class="order-form__fieldset">
-              <legend class="order-form__fieldset-legend order-form__fieldset-legend--nomargin">E-mail</legend>
+              <div class="order-form__fieldset-legend order-form__fieldset-legend--nomargin">E-mail</div>
               <div class="order-form__growing-container">
                 <label class="visually-hidden" for="email">E-mail:</label>
-                <input class="order-form__input order-form__input--email" id="email" type="email" name="email" value="" placeholder="Ваш Email*">
+                <input class="order-form__input order-form__input--email" id="email" type="email" name="email" value="" placeholder="Ваш Email*" required>
                 <svg class="order-form__email-icon">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
@@ -187,7 +187,7 @@
         <div class="order__container">
           <fieldset>
             <div class="order-form__fieldset">
-            <legend class="order-form__fieldset-legend order-form__fieldset-legend--nomargin">Доп</legend>
+            <div class="order-form__fieldset-legend order-form__fieldset-legend--nomargin">Доп</div>
             <div class="order-form__growing-container">
               <textarea class="order-form__comments" id="comments" name="comments" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
@@ -254,6 +254,7 @@
 
     pageHeader.classList.remove('page-header--nav-opened');
     pageHeader.classList.add('page-header--nav-closed');
+    navToggle.classList.remove('visually-hidden');
 
     navToggle.addEventListener('click', function() {
       if (pageHeader.classList.contains('page-header--nav-closed')) {

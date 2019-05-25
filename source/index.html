@@ -25,7 +25,7 @@
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="85" height="35" alt="Логотип Mishka">
           </picture>
         </a>
-        <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__nav-toggle visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="main-nav">
           <ul class="site-list main-nav__list">
@@ -320,6 +320,8 @@
 
     pageHeader.classList.remove('page-header--nav-opened');
     pageHeader.classList.add('page-header--nav-closed');
+    navToggle.classList.remove('visually-hidden');
+
 
     navToggle.addEventListener('click', function() {
       if (pageHeader.classList.contains('page-header--nav-closed')) {
