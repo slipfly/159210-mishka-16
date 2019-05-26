@@ -128,6 +128,18 @@
   border: 2px solid #c7c7c7;
 }
 
+.order-form input[type="radio"]:disabled + label,
+.order-form input[type="checkbox"]:disabled + label {
+  color: #c7c7c7;
+}
+
+.order-form input[type="radio"]:disabled + label::before,
+.order-form input[type="radio"]:disabled + label:hover::before,
+.order-form input[type="checkbox"]:disabled + label::before,
+.order-form input[type="checkbox"]:disabled + label:hover::before {
+  border: 2px solid #c7c7c7;
+}
+
 .order-form__type li:last-child,
 .order-form__color li:last-child {
   margin-bottom: 0;
