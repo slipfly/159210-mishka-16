@@ -10,6 +10,10 @@
   </script>
   <script src="js/picturefill.js" async></script>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font">
 </head>
 <body>
   <div style="display:none">
@@ -47,7 +51,7 @@
             <form class="searching" action="https://echo.htmlacademy.ru" method="get">
               <label class="searching__label" for="search-field">
                 Поиск
-                <svg class="searching__search-icon">
+                <svg class="searching__search-icon" width="18" height="19">
                   <use xlink:href="#icon-search"></use>
                 </svg>
               </label>
@@ -56,7 +60,7 @@
           </li>
           <li class="site-list__item cart">
             <a href="#">
-              <svg class="site-list__cart-icon">
+              <svg class="site-list__cart-icon" width="18" height="19">
                 <use xlink:href="#icon-cart"></use>
               </svg>
               <span>Корзина: пока пуста</span>
@@ -67,10 +71,10 @@
       <section class="offers-sections">
         <ul class="site-list offers-sections__list">
           <li class="site-list__item new-arrival">
-            <a href="#">Новые поступления</a>
+            <a href="#"><span>Новые поступления</span></a>
           </li>
           <li class="site-list__item sale">
-            <a href="#">Распродажа</a>
+            <a href="#"><span>Распродажа</span></a>
           </li>
         </ul>
       </section>
@@ -107,7 +111,7 @@
           <div class="itemcard__price-container">
             <span class="itemcard__price">1 200 руб.</span>
             <a class="itemcard__order-btn" href="#">
-              <svg class="itemcard__cart-icon">
+              <svg class="itemcard__cart-icon" width="18" height="19">
                 <use xlink:href="#icon-cart"></use>
               </svg>
               <span class="visually-hidden">Купить</span>
@@ -137,7 +141,7 @@
           <div class="itemcard__price-container">
             <span class="itemcard__price">690 руб.</span>
             <a class="itemcard__order-btn" href="#">
-              <svg class="itemcard__cart-icon">
+              <svg class="itemcard__cart-icon" width="18" height="19">
                 <use xlink:href="#icon-cart"></use>
               </svg>
               <span class="visually-hidden">Купить</span>
@@ -167,7 +171,7 @@
           <div class="itemcard__price-container">
             <span class="itemcard__price">1 500 руб.</span>
             <a class="itemcard__order-btn" href="#">
-              <svg class="itemcard__cart-icon">
+              <svg class="itemcard__cart-icon" width="18" height="19">
                 <use xlink:href="#icon-cart"></use>
               </svg>
               <span class="visually-hidden">Купить</span>
@@ -179,7 +183,7 @@
     <section class="production">
       <div class="production__container">
         <h2 class="production__header">
-          <svg class="production__video-icon">
+          <svg class="production__video-icon" width="32" height="27">
             <use xlink:href="#icon-video"></use>
           </svg>
           Процесс производства
@@ -196,7 +200,7 @@
           <img class="production__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видеоролик с процессом производства">
         </picture>
         <button class="production__play-btn" type="button">
-          <svg class="production__play-icon">
+          <svg class="production__play-icon" width="97" height="72">
             <use xlink:href="#icon-play"></use>
           </svg>
           Проиграть
@@ -223,21 +227,21 @@
         <ul>
           <li>
             <a class="social__btn" href="#" aria-label="Mishka в Инстаграм">
-              <svg class="social__svg social__svg--insta" role="img">
+              <svg class="social__svg social__svg--insta" width="22" height="21" role="img">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="social__btn" href="#" aria-label="Mishka на Фейсбуке">
-              <svg class="social__svg social__svg--fb" role="img">
+              <svg class="social__svg social__svg--fb" width="15" height="28" role="img">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="social__btn" href="#" aria-label="Mishka в Твиттере">
-              <svg class="social__svg social__svg--twit" role="img">
+              <svg class="social__svg social__svg--twit" width="23" height="20" role="img">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
